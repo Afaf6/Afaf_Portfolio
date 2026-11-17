@@ -1,0 +1,6 @@
+/* BackgroundFX */
+#fx{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden}
+#fx .blob{position:absolute;width:300px;height:300px;border-radius:50%;filter:blur(60px);opacity:.35}
+#fx .s{position:absolute;color:var(--sage);opacity:.6}#fx b:nth-of-type(even){color:var(--sky)}#fx b:nth-of-type(3n){color:var(--lilac)}
+.tr{position:fixed;z-index:50;pointer-events:none;font-size:18px;animation:trail 1.1s ease-out forwards}
+@keyframes trail{to{opacity:0;transform:translate(var(--tx),var(--ty)) scale(.3) rotate(120deg)}}

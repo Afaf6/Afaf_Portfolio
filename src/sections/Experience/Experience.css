@@ -1,0 +1,7 @@
+/* Experience */
+.tl{border-left:2px solid var(--line);margin-left:6px;padding-left:28px;display:grid;gap:30px}
+.tl article{position:relative}
+.tl article::before{content:"";position:absolute;left:-37px;top:8px;width:16px;height:16px;border-radius:50%;background:var(--sage);border:3px solid var(--bg)}
+.tl .when{color:var(--muted);font-size:14.5px}
+.tl h3{font-size:21px;margin:2px 0 8px}
+.tl ul{margin:0;padding-left:18px;color:var(--muted)}

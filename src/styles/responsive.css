@@ -1,0 +1,13 @@
+/* Mobile layout + reduced motion */
+@media (prefers-reduced-motion:reduce){.js .rv{opacity:1!important;transform:none!important;transition:none!important}.hero::before{animation:none}}
+@media (prefers-reduced-motion:reduce){.bub b,.cover span,h2::before,.tr{animation:none}}
+@media (max-width:760px){.bubbles{height:330px}.feat .cover{min-height:150px}
+.hero .wrap,.about,.feat{grid-template-columns:1fr}
+
+nav ul{gap:14px}
+.band{grid-template-columns:1fr;gap:8px}
+.grid{grid-template-columns:1fr}.card,.card.wide{grid-column:auto}
+.certs{grid-template-columns:1fr}
+.feat .txt{padding:26px}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}

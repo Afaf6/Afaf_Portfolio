@@ -1,0 +1,27 @@
+/* Projects */
+.feat{display:grid;grid-template-columns:1.1fr .9fr;background:var(--ink);color:var(--bg);border-radius:36px;overflow:hidden;margin-bottom:24px}
+.feat .txt{padding:36px}
+.feat h3{font-size:30px;margin-bottom:12px}
+.feat p{opacity:.85;margin:0 0 18px}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 20px;padding:0;list-style:none}
+.tags li{font-size:13.5px;padding:3px 11px;border-radius:999px;background:rgba(247,182,210,.28)}
+.grid{display:grid;grid-template-columns:repeat(6,1fr);gap:20px}
+.card{background:var(--surface);padding:26px;border-radius:28px 28px 28px 8px;grid-column:span 2}
+.card.wide{grid-column:span 3}
+.card:nth-child(even){border-radius:28px 8px 28px 28px}
+.card h3{font-size:22px;margin-bottom:6px}
+.card .kind{color:var(--muted);font-size:14.5px;margin-bottom:10px}
+.card p{margin:0 0 14px;font-size:15.5px;color:var(--muted)}
+.card .tags li{background:var(--bg)}
+.wip{border:2px dashed var(--lilac);background:transparent}
+.badge{display:inline-block;background:var(--lilac);color:#2b2540;font-size:13px;padding:2px 12px;border-radius:999px;margin-bottom:10px}
+.card,.feat{position:relative;overflow:hidden;transition:transform .25s ease-out,box-shadow .35s}
+.card:hover,.feat:hover{transform:perspective(900px) translateY(-6px) rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg));box-shadow:0 22px 44px -20px var(--sage)}
+.card::after,.feat::after{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;opacity:0;transition:opacity .3s;background:radial-gradient(280px circle at var(--mx,50%) var(--my,50%),color-mix(in srgb,var(--sage) 45%,transparent),transparent 65%)}
+.card:hover::after,.feat:hover::after{opacity:1}
+.cover{position:relative;height:120px;margin:-26px -26px 18px;overflow:hidden;background:linear-gradient(135deg,var(--sage),var(--sky))}
+.cover.g2{background:linear-gradient(135deg,var(--sky),var(--lilac))}.cover.g3{background:linear-gradient(135deg,var(--lilac),var(--sage))}
+.cover span{position:absolute;font-size:38px;animation:bob 4s ease-in-out infinite}
+.cover span:nth-child(1){left:12%;top:28%}.cover span:nth-child(2){left:44%;top:14%;animation-delay:.7s}.cover span:nth-child(3){left:75%;top:42%;animation-delay:1.4s}
+.card:hover .cover span,.feat:hover .cover span{animation-duration:1.4s}
+.feat .cover{margin:0;height:auto;min-height:260px}.feat .cover span{font-size:60px}

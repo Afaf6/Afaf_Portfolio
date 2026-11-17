@@ -1,0 +1,5 @@
+/* SectionTitle */
+h2{font-size:clamp(30px,4vw,42px);margin-bottom:28px}
+h2{position:relative;display:inline-block}
+h2::after{content:"";position:absolute;left:0;bottom:-8px;height:8px;width:100%;border-radius:8px;background:linear-gradient(90deg,var(--sage),var(--sky),var(--lilac));transition:transform .9s .35s cubic-bezier(.2,.8,.2,1);transform-origin:left}
+h2::before{content:"✿";margin-right:12px;color:var(--sage);display:inline-block;animation:spin 8s linear infinite}

@@ -1,0 +1,8 @@
+/* Skills */
+.bands{display:grid;gap:14px}
+.band{display:grid;grid-template-columns:170px 1fr;gap:16px;align-items:center;padding:16px 0;border-top:1.5px solid var(--line)}
+.band h3{font-size:19px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{background:var(--surface);padding:6px 14px;border-radius:999px;font-size:15px;border:1px solid var(--line)}
+.band:nth-child(1) .chip{border-color:var(--sage)}.band:nth-child(2) .chip{border-color:var(--sky)}.band:nth-child(3) .chip{border-color:var(--lilac)}
+.chip{transition:transform .25s,background .25s}.chip:hover{transform:translateY(-3px) scale(1.06);background:var(--sage)}

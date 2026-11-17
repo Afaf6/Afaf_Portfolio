@@ -1,0 +1,5 @@
+/* Footer */
+footer{margin-top:96px;background:color-mix(in srgb,var(--hero) 75%,transparent);border-radius:48px 48px 0 0;padding:64px 0 calc(40px + env(safe-area-inset-bottom,0px))}
+footer h2{font-size:clamp(32px,5vw,54px);max-width:16ch}
+footer .links{margin-top:22px}
+small{display:block;margin-top:44px;color:var(--muted)}

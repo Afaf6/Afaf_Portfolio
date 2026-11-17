@@ -1,0 +1,8 @@
+/* About */
+.about{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.about p{margin:0 0 14px;color:var(--muted)}
+.facts{display:grid;gap:12px;align-content:start}
+.fact{background:var(--surface);border-left:6px solid var(--sage);padding:14px 18px;border-radius:4px 18px 18px 4px}
+.fact:nth-child(2){border-color:var(--sky)}.fact:nth-child(3){border-color:var(--lilac)}
+.fact b{display:block;font-family:"Bricolage Grotesque",sans-serif;font-size:18px}
+.fact span{color:var(--muted);font-size:15px}

@@ -1,0 +1,7 @@
+/* Scroll-reveal + shared keyframes */
+@keyframes spin{to{transform:rotate(360deg)}}
+.js h2:not(.in)::after{transform:scaleX(0)}
+.js .rv{opacity:0;transform:translateY(36px) rotate(var(--r,0deg)) scale(.96);transition:opacity .7s cubic-bezier(.2,.8,.2,1) var(--d,0s),transform .85s cubic-bezier(.2,.9,.3,1.25) var(--d,0s)}
+.js .rv.l{transform:translateX(-44px)}.js .rv.r{transform:translateX(44px)}.js .rv.pop{transform:scale(.4)}
+.js .rv.in{opacity:1;transform:none}
+@keyframes bob{50%{transform:translateY(-12px) rotate(3deg)}}
